@@ -1,0 +1,12 @@
+{
+    "name": "movie_chat_bot",
+    "description": "A very simple Angular App that leverages an API.AI chatbot and gets you the details of a specified movie.",
+    "repository": "https://github.com/SiddAjmera/MovieChatBot.git",
+    "keywords": [
+        "movies",
+        "api.ai",
+        "chatbot",
+        "angular",
+        "spa"
+    ]
+}

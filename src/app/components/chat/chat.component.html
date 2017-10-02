@@ -1,0 +1,17 @@
+<md-list>
+  <md-list-item *ngFor="let message of messages">
+    <md-icon md-list-icon>{{ message.avatar }}</md-icon>
+    <h3 mdLine> {{message.from}} </h3>
+    <p mdLine>
+      <span> {{message.content}} </span>
+    </p>
+  </md-list-item>  
+</md-list>
+<md-divider></md-divider>
+<form class="example-form">
+  <md-form-field class="example-full-width">
+    <input mdInput #message maxlength="256" placeholder="Message" (keyup.enter)="addMessageFromUser(message)"> {{message.invalid}}
+    <md-icon mdSuffix (click)="addMessageFromUser(message)">send</md-icon>
+    <md-hint align="end">{{message.value.length}} / 256</md-hint>
+  </md-form-field>
+</form>
